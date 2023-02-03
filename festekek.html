@@ -18,39 +18,47 @@
   <title>Csináld magad!</title>
 </head>
 <style>
-  .conent{width:96%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
-  body,
-  html {
-    height: 100%;
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   .borderr {
+    border: solid grey 1px;
+    margin: 1%;
   }
 
-  .footer {
+.kor {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    border: solid white;
+    background-color: skyblue;
+    display: inline-block;
+    position: absolute;
 
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
   }
-
-  .imgg {
+.imgg {
     padding-top: 15px;
 
     max-width: 100%;
-    
-  }
-  .kor {
-        border-radius: 50%;
-        height: 70px;
-        width: 70px;
-        border: solid white;
-        background-color: skyblue;
-        display: inline-block;
-        position: absolute;
-        
-    }
 
+  }
+.conent {
+    width: 96%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+  }
+  body,
+  html {
+    min-height: 100vh;
+
+    font-family: 'Noto Sans' sans-serif;
+  }
+
+  .footer {
+    background-color: rgb(13, 42, 138);
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 
   .bg {
     background-image: url(img/hatter.jpg);
@@ -60,29 +68,37 @@
     margin: auto;
   }
 
-  .borderr{
-    border: solid grey 1px;
-    margin: 1%;
+  .kalapacs {
+    flex-shrink: 0;
+    width: 4%;
+    height: 4%;
+    position: relative;
+  }
+
+  .tartalom {
+    background-color: rgba(255, 255, 255, 0.85);
+    min-height: 100vh;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 </style>
 
 <body class="bg">
 
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0D2A8A; ">
-    <!-- <img src="img/hammer2.svg" style="height: 5%; width: 5%;"> -->
+    <!-- <a class="navbar-brand"  href="#"><img src="img/hammer2.svg" alt=""></a> -->
     <div class="container-fluid">
-      <a class="navbar-brand"></a>
+
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="fooldal.html">Főoldal</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Főoldal</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="festekek.html">Festékek</a>
@@ -106,102 +122,123 @@
   </nav>
 
 
-  <div class="inner-bg"
-    style="background-color: rgba(255, 255, 255, 0.7); margin-left: 2%;margin-right: 2%; min-height: 90%;">
+  <div class="container tartalom">
     <h1 style="color: black;text-align: center;">Válasszon színt</h1>
-<div class="conent">
-    <div class="row">
-      <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
-        <span class="kor">ㅤ</span>
-        <b><p>Albert beltéri falfesték Égkék (2 liter)</p></b>
 
-        <p><b>Gyártó:</b>  Hat Szivárvány nyrt. <br>
-        <b>Felhasználás:</b>Beltér <br>
-        <b>Mennyiség:</b>2 liter  <br>
-        <b>Egységár:</b> 2500 Ft/liter <br>
-      
-      </p> 
+    <div class="conent">
+      <div class="row">
+        <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
+          <span class="kor">ㅤ</span>
+          <b>
+            <p>Albert beltéri falfesték Égkék (2 liter)</p>
+          </b>
+
+          <p><b>Gyártó:</b> Hat Szivárvány nyrt. <br>
+            <b>Felhasználás:</b>Beltér <br>
+            <b>Mennyiség:</b>2 liter <br>
+            <b>Egységár:</b> 2500 Ft/liter <br>
+
+          </p>
+
+        </div>
+        <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
+          <b>
+            <p>Albert beltéri falfesték Égkék (2 liter)</p>
+          </b>
+
+          <p><b>Gyártó:</b> Hat Szivárvány nyrt. <br>
+            <b>Felhasználás:</b>Beltér <br>
+            <b>Mennyiség:</b>2 liter <br>
+            <b>Egységár:</b> 2500 Ft/liter <br>
+
+          </p>
+        </div>
+        <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
+          <b>
+            <p>Albert beltéri falfesték Acélkék (2 liter)</p>
+          </b>
+
+          <p><b>Gyártó:</b> Hat Szivárvány nyrt. <br>
+            <b>Felhasználás:</b>Beltér <br>
+            <b>Mennyiség:</b>2 liter <br>
+            <b>Egységár:</b> 2500 Ft/liter <br>
+
+          </p>
+        </div>
+        <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
+          <b>
+            <p>Albert beltéri falfesték Tavasz zöld (2 liter)</p>
+          </b>
+
+          <p><b>Gyártó:</b> Hat Szivárvány nyrt. <br>
+            <b>Felhasználás:</b>Beltér <br>
+            <b>Mennyiség:</b>2 liter <br>
+            <b>Egységár:</b> 2500 Ft/liter <br>
+
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
+          <b>
+            <p>Albert beltéri falfesték Paradicsom (2 liter)</p>
+          </b>
+
+          <p><b>Gyártó:</b> Hat Szivárvány nyrt. <br>
+            <b>Felhasználás:</b>Beltér <br>
+            <b>Mennyiség:</b>2 liter <br>
+            <b>Egységár:</b> 2500 Ft/liter <br>
+
+          </p>
+        </div>
+        <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
+          <b>
+            <p>Albert beltéri falfesték Lazac (2 liter)</p>
+          </b>
+
+          <p><b>Gyártó:</b> Hat Szivárvány nyrt. <br>
+            <b>Felhasználás:</b>Beltér <br>
+            <b>Mennyiség:</b>2 liter <br>
+            <b>Egységár:</b> 2500 Ft/liter <br>
+
+          </p>
+        </div>
+        <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
+          <b>
+            <p>Albert beltéri falfesték Barna (2 liter)</p>
+          </b>
+
+          <p><b>Gyártó:</b> Hat Szivárvány nyrt. <br>
+            <b>Felhasználás:</b>Beltér <br>
+            <b>Mennyiség:</b>2 liter <br>
+            <b>Egységár:</b> 2500 Ft/liter <br>
+
+          </p>
+        </div>
+        <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
+          <b>
+            <p>Albert beltéri falfesték Arany (2 liter)</p>
+          </b>
+
+          <p><b>Gyártó:</b> Hat Szivárvány nyrt. <br>
+            <b>Felhasználás:</b>Beltér <br>
+            <b>Mennyiség:</b>2 liter <br>
+            <b>Egységár:</b> 2500 Ft/liter <br>
+
+          </p>
+        </div>
 
       </div>
-      <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
-        <b><p>Albert beltéri falfesték Égkék (2 liter)</p></b>
 
-        <p><b>Gyártó:</b>  Hat Szivárvány nyrt. <br>
-        <b>Felhasználás:</b>Beltér <br>
-        <b>Mennyiség:</b>2 liter  <br>
-        <b>Egységár:</b> 2500 Ft/liter <br>
-      
-      </p> 
-      </div>
-      <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
-        <b><p>Albert beltéri falfesték Acélkék (2 liter)</p></b>
 
-        <p><b>Gyártó:</b>  Hat Szivárvány nyrt. <br>
-        <b>Felhasználás:</b>Beltér <br>
-        <b>Mennyiség:</b>2 liter  <br>
-        <b>Egységár:</b> 2500 Ft/liter <br>
-      
-      </p> 
-      </div>
-      <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
-        <b><p>Albert beltéri falfesték Tavasz zöld (2 liter)</p></b>
 
-        <p><b>Gyártó:</b>  Hat Szivárvány nyrt. <br>
-        <b>Felhasználás:</b>Beltér <br>
-        <b>Mennyiség:</b>2 liter  <br>
-        <b>Egységár:</b> 2500 Ft/liter <br>
-      
-      </p> 
-      </div>
+
     </div>
-    <div class="row">
-      <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
-        <b><p>Albert beltéri falfesték Paradicsom (2 liter)</p></b>
-
-        <p><b>Gyártó:</b>  Hat Szivárvány nyrt. <br>
-        <b>Felhasználás:</b>Beltér <br>
-        <b>Mennyiség:</b>2 liter  <br>
-        <b>Egységár:</b> 2500 Ft/liter <br>
-      
-      </p> 
-      </div>
-      <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
-        <b><p>Albert beltéri falfesték Lazac (2 liter)</p></b>
-
-        <p><b>Gyártó:</b>  Hat Szivárvány nyrt. <br>
-        <b>Felhasználás:</b>Beltér <br>
-        <b>Mennyiség:</b>2 liter  <br>
-        <b>Egységár:</b> 2500 Ft/liter <br>
-      
-      </p> 
-      </div>
-      <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
-        <b><p>Albert beltéri falfesték Barna (2 liter)</p></b>
-
-        <p><b>Gyártó:</b>  Hat Szivárvány nyrt. <br>
-        <b>Felhasználás:</b>Beltér <br>
-        <b>Mennyiség:</b>2 liter  <br>
-        <b>Egységár:</b> 2500 Ft/liter <br>
-      
-      </p> 
-      </div>
-      <div class="col-sm borderr"><img src="img/bucket.jpg" class="imgg">
-        <b><p>Albert beltéri falfesték Arany (2 liter)</p></b>
-
-        <p><b>Gyártó:</b>  Hat Szivárvány nyrt. <br>
-        <b>Felhasználás:</b>Beltér <br>
-        <b>Mennyiség:</b>2 liter  <br>
-        <b>Egységár:</b> 2500 Ft/liter <br>
-      
-      </p> 
-      </div>
-
-    </div>
 
 
 
 
-</div>
+
   </div>
 
 
@@ -209,35 +246,34 @@
 
 
 
+  <div class="footer">
+    <footer class="container">
 
-  <footer style="background-color: #0D2A8A; margin-top: auto;" class="footer">
-    <div class="container">
-      <div class="row" style="margin-top: 8%;margin-bottom: 8%;">
-        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3" style="float: right;">
-          <div>
-            <p><b>Elérhetőségeink</b> </p>
-          </div>
+      <div class="row">
+        <div class="col-md-3">
+
+          <b>Elérhetőségeink</b>
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3" style="float: right;">
-          <div>
-            <p><b>Levél</b>: DIY Barkácsáruház</p>
-          </div>
+        <div class="col-md-3">
+
+          <b>Levél</b>: DIY Barkácsáruház
+
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3" style="float: right;">
-          <div>
-            <p><b>E-mail</b>: info@barkacsaruhaz.hu</p>
-          </div>
+        <div class="col-md-3">
+
+          <b>E-mail</b>: info@barkacsaruhaz.hu
+
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3" style="float: right;">
-          <div>
-            <p><b>Telefon</b>: +36-1-555-55-55</p>
-          </div>
+        <div class="col-md-3">
+
+          <b>Telefon</b>: +36-1-555-55-55
+
         </div>
 
       </div>
-    </div>
-  </footer>
 
+    </footer>
+  </div>
 
   </div>
 </body>
