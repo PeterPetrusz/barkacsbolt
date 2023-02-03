@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+    <script src="./Carousel Template for Bootstrap_files/jquery.min.js"></script>
+
+
+    <title>Csináld magad!</title>
+</head>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+
+    .faanyagok {
+        border-radius: 50%;
+        height: 65%;
+        border: solid white;
+        float: right;
+    }
+
+    body,
+    html {
+        min-height: 100vh;
+
+        font-family: 'Noto Sans' sans-serif;
+    }
+
+    .footer {
+        background-color: rgb(13, 42, 138);
+        color: white;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        
+    }
+
+    .bg {
+        background-image: url(img/hatter.jpg);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+    }
+
+    .kalapacs {
+        flex-shrink: 0;
+        width: 4%;
+        height: 4%;
+        position: relative;
+    }
+
+    .tartalom {
+        background-color: rgba(255, 255, 255, 0.85);
+        min-height: 100vh;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        
+    }
+
+</style>
+
+<body class="bg">
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0D2A8A; ">
+        <!-- <a class="navbar-brand"  href="#"><img src="img/hammer2.svg" alt=""></a> -->
+        <div class="container-fluid">
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="festekek.html">Festékek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faanyagok.html">Faanyagok</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="szerszamkatalogus.html">Szerszámkatalógus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rolunk.html">Rólunk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container tartalom">
+        <h1 style="color: black;text-align: center;">Bükk</h1>
+        <div class="szoveg">
+            <img src="img/faanyagok/bukk.jpg" class="faanyagok">
+
+            <p>A bükk sokféleképpen hasznosítható kemény lombos faanyag. Magyarországon elsősorban az európai bükk
+                (Fagus
+                sylvatica) anyaga.</p>
+
+            <p>Közép-eúrópai flóraelem. Hegyvidéki fafaj. Termőhelyigényes, szélsőségeket nem tűrő, a kései fagyokra
+                érzékeny.
+                Páradús levegőt igényel, mészkedvelő.</p>
+
+            <p>20-40 m magas egyenes. hengeres törzsű fa. Kérge háncsrosttól mentes, sima, szürkészöldes színű.
+                Kéregvastagsága 1-2 cm.</p>
+
+            <p>Halványsárgás, világosszürkés, rózsaszínes tónusú anyag. A szíjács és a geszt nehezen különíthető el. Az
+                időnként
+                előforduló vörösesbarna álgeszt a fa betegségének tünete. Kis meretú, szórtan elhelyezkedő pórusai
+                szemmel nemigen
+                láthatók, az évgyűrűk kései pásztájában ritkábbak, ezért itt a fa sötétebb színű. Bélsugarai szélesek, 1
+                mm körüliek, a
+                sugármetszeten tükröket alkotnak, a húrmetszeten vöröses kis orsókként látszanak.</p>
+        </div>
+        <table>
+            <tr style="background-color: rgb(52, 58, 64); color: white;">
+                <th>Tulajdonság</th>
+                <th>Érték</th>
+            </tr>
+            <tr>
+                <td>Rönkhossz</td>
+                <td>10...20 m</td>
+            </tr>
+            <tr>
+                <td>Rönkátmenet</td>
+                <td>0,9...1,5 m</td>
+            </tr>
+            <tr>
+                <td>Sűrűség</td>
+                <td>0,68 g/cm³</td>
+            </tr>
+            <tr>
+                <td>Zsugorodás sugárirányban</td>
+                <td>5,8%</td>
+            </tr>
+            <tr>
+                <td>Zsugorodás húrirányban</td>
+                <td>11,8%</td>
+            </tr>
+            <tr>
+                <td>Keménység - Rostra merőleges</td>
+                <td>34 MPa</td>
+            </tr>
+            <tr>
+                <td>Keménység - Rosttal párhuzamos</td>
+                <td>72 MPa</td>
+            </tr>
+            <tr>
+                <td>Merevség</td>
+                <td>14000 MPa</td>
+            </tr>
+            <tr>
+                <td>Nyomó szilárdság</td>
+                <td>62 MPa</td>
+            </tr>
+            <tr>
+                <td>Hajlító szilárdság</td>
+                <td>123 MPa</td>
+            </tr>
+            <tr>
+                <td>Nyíró szilárdság</td>
+                <td>8 MPa</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+
+
+
+
+    <div class="footer">
+        <footer class="container">
+
+            <div class="row">
+                <div class="col-md-3">
+
+                    <b>Elérhetőségeink</b>
+                </div>
+                <div class="col-md-3">
+
+                    <b>Levél</b>: DIY Barkácsáruház
+
+                </div>
+                <div class="col-md-3">
+
+                    <b>E-mail</b>: info@barkacsaruhaz.hu
+
+                </div>
+                <div class="col-md-3">
+
+                    <b>Telefon</b>: +36-1-555-55-55
+
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+
+    </div>
+</body>
+
+</html>
