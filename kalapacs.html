@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+    <script src="./Carousel Template for Bootstrap_files/jquery.min.js"></script>
+
+
+    <title>Csináld magad!</title>
+</head>
+<style>
+    body,
+    html {
+        min-height: 100vh;
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .footer {
+        background-color: rgb(13, 42, 138);
+        color: white;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .bg {
+        background-image: url(img/hatter.jpg);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+    }
+
+    .kalapacs {
+        flex-shrink: 0;
+        width: 4%;
+        height: 4%;
+        position: relative;
+    }
+
+    .tartalom {
+        background-color: rgba(255, 255, 255, 0.85);
+        min-height: 100vh;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    h4{
+        font-weight: bolder;
+    }
+
+    h5{
+        font-weight: bold;
+    }
+    
+</style>
+
+<body class="bg">
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0D2A8A; ">
+        <!-- <a class="navbar-brand"  href="#"><img src="img/hammer2.svg" alt=""></a> -->
+        <div class="container-fluid">
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="festekek.html">Festékek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faanyagok.html">Faanyagok</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="szerszamkatalogus.html">Szerszámkatalógus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rolunk.html">Rólunk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container tartalom">
+        <h1 style="color: black;text-align: center;">A kalapács használata</h1>
+
+        <h4>A képlékenység, képlékeny alakítás</h4>
+        <p> Az anyag alakítható halmazállapotának megváltoztatásával és halmazállapotának megváltoztatása nélkül.
+        halmazállapot megváltoztatása nélküli alakítás végbemehet úgy, hogy az anyag tömege alakítás közben megváltozik
+        (pl. forgácsolás), de úgy is, hogy az anyag tömege változatlan marad. Ezt az alakítási eljárást képlékeny
+        alakításnak
+        nevezzük. 
+        A fémek képlékenysége különböző. Legképlékenyebb az ólom. Jól alakítható a réz és az alumínium.
+        A kis széntartalmú acél is képlékeny, képlékenysége hevítéssel fokozható. A nem képlékeny anyagot ridegnek
+        mondjuk. 
+        A rideg anyag még hevítéssel sem alakítható (pl. az öntöttvas). A képlékeny alakítás hidegen és melegen is
+        végezhető.</p>
+
+
+
+        <h4>Rugalmas és maradó alakváltozás</h4>
+        <p> Az anyag viselkedése szempontjából kétféle alakváltozást különböztetünk meg: rugalmas és maradó alakváltozást.
+        Rugalmas alakváltozásnál a külső erő megszűnése után - mivel a kohéziós erők (az anyag részecskéit összetartó
+        belső erők)
+        nagyobbak a külső erőknél - az alakváltozás is megszűnik, vagyis az anyag rugalmasságánál fogva visszanyeri
+        eredeti
+        alakját. A maradó alakváltozásnál a külső erő megszűnése után - mivel a kohéziós erők kisebbek a külső erőknél -
+        az
+        alakváltozás megmarad, vagyis az anyag maradó alakváltozást szenved.</p>
+
+        <h4>Kézikalapácsok</h4>
+        <p> A szakmai követelmények fejlődése során szerzett tapasztalatok alapján különféle alakú, nagyságú és súlyú
+        kézikalapács-fajtákat alakítottak ki.
+        A kézikalapácsokat két nagy csoportba sorolhatjuk:
+        <ul>
+            <li>műhely kézikalapácsok, amelyeket a fémipar minden ágában általánosan használnak;</li>
+            <li>szakmai vagy alakító-kalapácsok, amelyeket túlnyomórészt speciális területeken alkalmaznak.</li>
+        </ul>
+        
+        A kalapács - néhány kalapácsfajtától eltekintve - acélból készül. Egyik vége, az ún. talp általában négyszög
+        keresztmetszetű, sarkai kissé le vannak törve, felülete pedig enyhén domború.
+        A kalapácstest másik vége a kalapács éle, amely a kalapács felhasználása szerint különböző sugarakkal
+        lekerekített. A kalapácstest közepén levő ovális alakú nyélfurat mindkét oldalról befelé szűkülve kúpos, mivel
+        így a kalapácsnyelet szétfeszítő ék hatása jobban érvényesül.</p>
+
+
+        <h4>A kalapács helyes és helytelen beütése</h4>
+
+        <p> A kalapács talpának kiképzése domború. Sík talpfelületű kalapáccsal való ütéskor a kalapács tengelyvonalának
+        pontosan merőlegesnek kell lennie a megmunkálandó felületre. Mivel a kalapács talpa kissé domború, lehetséges a
+        merőlegességtől való kisebb eltérés, az ütőhatás így is egy helyen összpontosul, és csökken annak lehetősége,
+        hogy a talp élei vagy sarkai az anyagba nyomódjanak.</p>
+
+
+        <h4>Az általánosan használt kalapácsok:</h4>
+        
+        <h5>Félkezes kalapács</h5>
+        <p> Minden iparágban általános műhelymunkákhoz használt kalapácsfajta. Finom műhelymunkákhoz a 0,15...0,5 kg-os,
+        közepes nagyságú munkákhoz a 0,5... 1,5 kg-os, míg a nehezebb munkákhoz az 1...2 kg-os kalapácsok a
+        legalkalmasabbak.</p>
+
+
+
+        <h5>Félkézkalapács</h5>
+
+        
+        <p> Padi vagy lakatoskalapács az úgynevezett angol formájú könnyű kalapács. A kalapácstalp kerek, kissé domború,
+        sarkai le vannak törve. A kalapácséi ékszerű, végén igen kis le- kerekítéssel.</p>
+
+
+        <h4>Lakatos- és gumikalapács</h4>
+
+        <h5>Gumikalapács</h5>
+        <p> Mindazokhoz a munkákhoz, ahol fakalapácsot használnak, újabban jól beváltak a gumikalapácsok. Kopásállók,
+        erősebb igénybevételre nem deformálódnak. Alakjuk hengeres, átmérőjük 50-90 mm között van, súlyuk 0.25-1.5 kg.</p>
+
+        <h5>Fakalapács</h5>
+        <p>Olyan finom, fényes lemezek alakítására használják, amelyeknek felületén semmiféle megmunkálási nyomnak nem
+        szabad látszani. A fakalapácsokat rendszerint hordóalakúra képezik ki, talpátmérőjük 50...80 mm között változik.
+        Anyaguk általában gyertyánfa.</p>
+
+
+        <h4>A kalapács használata</h4>
+        <p> A kalapácsot mindenkor a munka körülményei és feltételei szerint válasszuk meg. A kalapács minden részét
+        munkába- vétel előtt tüzetesen vizsgáljuk meg, és csak kifogástalan állapotban levő kalapácsot használjunk. Ha
+        bármilyen sérülés vagy kopás mutatkozik rajta, rögtön javítsuk meg. Sérült vagy elhasználódott kalapácsokkal nem
+        szabad dolgozni.</p>
+
+        <h4>A kalapács tartása</h4>
+
+        <p> A kalapács eredményes használatához szükséges ütőmunkát a kézbe fogott nyél lendítésével fejtjük ki. A
+        kalapácsnyelet úgy fogjuk a kezünkbe, hogy a vége tenyerünk élére támaszkodjék. A nyelet úgy markoljuk át, hogy
+        ujjaink szorosan egymás mellé záruljanak. A fogás legyen erős, de nem merev. Ha hüvelykujjunk a kalapács
+        nyelén hosszában fekszik, a fogás bizonytalan.Ha a kalapácsnyelet középen fogjuk meg, a kalapács
+        vezetése bizonytalanná válik, az ütőhatás pedig gyenge.</p>
+
+    </div>
+
+    <div class="footer">
+        <footer class="container">
+
+            <div class="row">
+                <div class="col-md-3">
+
+                    <b>Elérhetőségeink</b>
+                </div>
+                <div class="col-md-3">
+
+                    <b>Levél</b>: DIY Barkácsáruház
+
+                </div>
+                <div class="col-md-3">
+
+                    <b>E-mail</b>: info@barkacsaruhaz.hu
+
+                </div>
+                <div class="col-md-3">
+
+                    <b>Telefon</b>: +36-1-555-55-55
+
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+
+    </div>
+</body>
+
+</html>
